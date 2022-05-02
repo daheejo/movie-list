@@ -179,3 +179,56 @@ body {
     line-height: 23px;
     background-color: rgba(242, 242, 242, 1);
 }
+
+.footer-top {
+    width: 1189px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 53px 366px;
+}
+
+
+
+.footer-head {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.social-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+
+.footer-btm {
+    padding: 36px 365px 38px 365px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-btm dt {
+    display: inline;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-btm dd {
+    display: inline;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.footer-btm .copyright {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
