@@ -1,0 +1,142 @@
+@charset 'utf-8';
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.movie-list-wrapper {
+    width: 1060px;
+    /* 수정요망 */
+    padding: 41px 29px 31px 29px;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.movie-list-tit {
+    padding-bottom: 37px;
+    width: 80%;
+    /* 수정요망 */
+    margin: 0 auto;
+    border-bottom: rgba(189, 189, 189, 1) 1px solid;
+    
+}
+
+.nav .nav-list{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 28px;
+}
+
+.movie-li {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 23px;
+    padding: 26px 27px;
+    margin-top: 28px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #F2F2F2;
+}
+
+.movie-li li {
+    padding: 19px 20px 0 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.movie-item {
+    text-align: left;
+}
+.movie-item .movie-img {
+    display: block;
+    border-radius: 10px;
+    filter:drop-shadow(1px solid rgba(189, 189, 189, 1)); 
+    border: 1px solid #BDBDBD;
+}
+
+.movie-item .movie-tit {
+    display: block;
+    margin-top: 11px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.movie-info {
+    margin-top: 12px;
+}
+
+.movie-info dt,
+.movie-info dd {
+    display: inline;
+}
+
+.movie-info dt {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 23px;
+    color: #828282;
+    ;
+}
+
+.movie-info dd {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+}
+.movie-info .row-align {
+    /* overflow: hidden; */
+    //clearfix
+}
+.movie-info .right-align {
+    float: right;
+}
+
+.movie-info .left-align:nth-child(2),
+.movie-info .left-align:nth-child(3) {
+    display: block;
+}
+
+.movie-info .rate::after {
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    background-image: url(img/별점이미지.png);
+    width: 14px;
+    height: 14px;
+}
+
+.movie-item .ctl-btn {
+    display: inline-block;
+    padding-top: 9px;
+    padding-bottom: 12px;
+    background-color: #F2F2F2;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.ctl-btn.trailer::before {
+    content: '';
+    display: inline-block;
+    background-image: url(./img/아이콘_재생.png);
+    width: 13px;
+    height: 13px;
+}
+.footer {
+    bottom: 0;
+    width: 100%;
+    margin-top: 135px;
+    line-height: 23px;
+    background-color: rgba(242, 242, 242, 1);
+}
