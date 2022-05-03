@@ -17,7 +17,6 @@ body {
 
 .movie-list-wrapper {
     width: 1060px;
-    /* 수정요망 */
     padding: 41px 29px 31px 29px;
     background-color: rgba(242, 242, 242, 1);
     border: 1px solid grey;
@@ -27,7 +26,6 @@ body {
 .movie-list-tit {
     padding-bottom: 37px;
     width: 80%;
-    /* 수정요망 */
     margin: 0 auto;
     border-bottom: rgba(189, 189, 189, 1) 1px solid;
     font-style: normal;
@@ -206,6 +204,18 @@ body {
     padding: 36px 365px 38px 365px;
     display: flex;
     justify-content: space-between;
+}
+
+.footer-btm dl dt::before {
+    display: inline-block;
+    content: "|";
+    color: grey;
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+.footer-btm dl dt:nth-child(1)::before {
+    content: '';
 }
 
 .footer-btm dt,
