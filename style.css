@@ -2,10 +2,13 @@
 
 body {
     font-family: 'Nanum Gothic', sans-serif;
+    height: 100vh;
 }
 
 #app {
-    height: 100vh;
+    max-width: 1060px;
+    margin: 0 auto;
+    margin-top: 91px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,10 +119,7 @@ body {
     font-size: 13px;
     line-height: 19px;
 }
-.movie-info .row-align {
-    /* overflow: hidden; */
-    //clearfix
-}
+
 .movie-info .right-align {
     float: right;
 }
