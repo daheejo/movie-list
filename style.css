@@ -43,7 +43,7 @@ body {
     
 }
 
-.nav-list .nav-item:first-child {
+.nav-list .nav-item.clicked {
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -79,6 +79,7 @@ body {
 
 .movie-item .movie-img {
     display: block;
+    width: 180px;
     height: 250px;
     border-radius: 10px;
     filter:drop-shadow(1px solid rgba(189, 189, 189, 1)); 
@@ -102,21 +103,18 @@ body {
 .movie-info dt,
 .movie-info dd {
     display: inline;
+    font-style: normal;
+    font-size: 13px;
 }
 
 .movie-info dt {
-    font-style: normal;
     font-weight: 900;
-    font-size: 13px;
     line-height: 23px;
     color: #828282;
-    ;
 }
 
 .movie-info dd {
-    font-style: normal;
     font-weight: 400;
-    font-size: 13px;
     line-height: 19px;
 }
 
@@ -181,7 +179,7 @@ body {
 }
 
 .footer-top {
-    width: 1189px;
+    width: 100%;
     margin: 0 auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     display: flex;
@@ -210,21 +208,17 @@ body {
     justify-content: space-between;
 }
 
-.footer-btm dt {
-    display: inline;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-}
-
+.footer-btm dt,
 .footer-btm dd {
     display: inline;
     font-style: normal;
     font-size: 14px;
     line-height: 20px;
-}
 
+}
+.footer-btm dt {
+    font-weight: 700;
+}
 
 .footer-btm .copyright {
     font-style: normal;
