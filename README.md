@@ -1,3 +1,2 @@
-# movie-list
-정글 시네마의 영화 목록 페이지입니다.
+# 정글시네마 영화목록 페이지
 https://daheejo.github.io/movie-list/
