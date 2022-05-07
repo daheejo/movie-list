@@ -169,6 +169,7 @@ body {
 }
 
 .footer {
+    box-sizing: border-box;
     bottom: 0;
     width: 100%;
     margin-top: 135px;
@@ -177,7 +178,6 @@ body {
 }
 
 .footer-top {
-    width: 100%;
     margin: 0 auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     display: flex;
@@ -207,6 +207,15 @@ body {
 }
 
 .footer-btm dl dt::before {
+    display: inline-block;
+    content: "|";
+    color: grey;
+    margin: 0 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-btm .field::before {
     display: inline-block;
     content: "|";
     color: grey;
