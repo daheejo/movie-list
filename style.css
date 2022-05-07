@@ -6,7 +6,7 @@ body {
 }
 
 #app {
-    max-width: 1060px;
+    /* max-width: 1060px; */
     margin: 0 auto;
     margin-top: 91px;
     display: flex;
@@ -16,7 +16,7 @@ body {
 }
 
 .movie-list-wrapper {
-    width: 1060px;
+    max-width: 1060px;
     padding: 41px 29px 31px 29px;
     background-color: rgba(242, 242, 242, 1);
     border: 1px solid grey;
@@ -120,10 +120,10 @@ body {
     float: right;
 }
 
-.movie-info .left-align:nth-child(2),
-.movie-info .left-align:nth-child(3) {
-    display: block;
+.movie-info .left-align:first-child {
+    display: inline-block;
 }
+
 
 .movie-info .rate::after {
     content: '';
