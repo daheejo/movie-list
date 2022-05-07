@@ -97,7 +97,7 @@ body {
 .movie-info dt,
 .movie-info dd {
     display: inline;
-    @include font-style($fSize:13px)
+    @include font-style($fSize:13px);
 }
 
 .movie-info dt {
@@ -162,7 +162,6 @@ body {
 }
 
 .footer {
-    box-sizing: border-box;
     bottom: 0;
     width: 100%;
     margin-top: 135px;
@@ -190,6 +189,10 @@ body {
     gap: 30px;
 }
 
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
 
 .footer-btm {
     padding: 36px 365px 38px 365px;
@@ -214,6 +217,7 @@ body {
 .footer-btm dd {
     display: inline;
     line-height: 20px;
+    word-break: keep-all;
     @include font-style($fSize: 14px);
 
 }
@@ -225,3 +229,32 @@ body {
     @include font-style(700, 14px);
     line-height: 20px;
 }
+
+@media screen and (max-width: 1020px) {
+
+    .movie-li {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .footer-head {
+        margin-bottom: 20px;
+    }
+  
+    .footer-btm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-btm dt,
+    .footer-btm dd {
+        word-break: keep-all;
+    }
+    .footer-btm .copyright {
+        margin-top: 20px;
+    }
+  }
