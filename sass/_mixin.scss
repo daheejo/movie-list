@@ -1,0 +1,13 @@
+@mixin font-style($fWeight, $fSize) {
+    font-style: normal;
+    font-weight: $fWeight;
+    font-size: $fSize;
+}
+
+@mixin footer-info-div {
+    display: inline-block;
+    content: "|";
+    color: grey;
+    margin: 0 8px;
+    font-size: 14px;
+}
