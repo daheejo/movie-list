@@ -62,6 +62,8 @@ body {
 .movie-li li {
     border: 1px solid grey;
     border-radius: 10px;
+    outline: 1px solid rgb(0 0 0 / 30%);
+    ox-shadow: 0px 0px 5px rgb(0 0 0 / 30%);
 }
 
 .movie-item {
